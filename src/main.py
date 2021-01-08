@@ -5,6 +5,7 @@
 
 
 def print_hi(name):
+    print("2224444")
     print("22222")
     print("hhahaha")
     print("作业")
