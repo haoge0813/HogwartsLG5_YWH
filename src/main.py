@@ -5,6 +5,7 @@
 
 
 def print_hi(name):
+    print("hhahaha")
     print("作业")
     print("test")
     print("word")
