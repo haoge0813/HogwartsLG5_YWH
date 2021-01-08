@@ -5,6 +5,7 @@
 
 
 def print_hi(name):
+    print("作业")
     print("test")
     print("word")
     # Use a breakpoint in the code line below to debug your script.
