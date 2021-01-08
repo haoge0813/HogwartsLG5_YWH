@@ -5,6 +5,7 @@
 
 
 def print_hi(name):
+    print("22333333")
     print("22222")
     print("word")
     # Use a breakpoint in the code line below to debug your script.
