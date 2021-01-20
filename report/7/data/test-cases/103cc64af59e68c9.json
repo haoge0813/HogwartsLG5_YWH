@@ -1,0 +1,113 @@
+{
+  "uid" : "103cc64af59e68c9",
+  "name" : "test_add[equivalence_class_error1]",
+  "fullName" : "test_pytest.test_pytest_task_two.test_task_two.TestTaskTwo#test_add",
+  "historyId" : "631dc88f94da9b7ea2d604f885aab2bd",
+  "time" : {
+    "start" : 1611106711217,
+    "stop" : 1611106711217,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 参数类型不是数值类型",
+  "statusTrace" : "self = <test_task_two.TestTaskTwo object at 0x00000267B537E888>, a = '0.3', b = 9.8, range_left = 5, range_right = 10\n\n    @allure.link(\"https://www.baidu.com/\")\n    @allure.story(\"加法运算用例\")#子级标注\n    @pytest.mark.run(order=1)#执行顺序\n    @pytest.mark.usefixtures(\"setup_teardown\")#调用fixtures方法\n    @pytest.mark.parametrize(\"a,b,range_left,range_right\",get_yaml_data(key=\"add\"),ids=get_yaml_data(key=\"ids\"))#参数\n    def test_add(self,a,b,range_left,range_right):\n>       r=Calculator.add(a,b)\n\ntest_pytest\\test_pytest_task_two\\test_task_two.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nsrc\\model\\calculator.py:21: in add\n    Calculator.check_number_type(a)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ndata = '0.3'\n\n    @staticmethod\n    def check_number_type(data):\n        \"\"\"\n        校验数据类型是否int类型\n        :param data:\n        :return:\n        \"\"\"\n>       assert (isinstance(data, int) or isinstance(data, float)),\"参数类型不是数值类型\"\nE       AssertionError: 参数类型不是数值类型\n\nsrc\\model\\calculator.py:11: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup_teardown",
+    "time" : {
+      "start" : 1611106711163,
+      "stop" : 1611106711163,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "setup_teardown::0",
+    "time" : {
+      "start" : 1611106741575,
+      "stop" : 1611106741575,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业二"
+  }, {
+    "name" : "story",
+    "value" : "加法运算用例"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_teardown')"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_pytest.test_pytest_task_two"
+  }, {
+    "name" : "suite",
+    "value" : "test_task_two"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTaskTwo"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-939OH2V"
+  }, {
+    "name" : "thread",
+    "value" : "5412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.test_pytest_task_two.test_task_two"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "'0.3'"
+  }, {
+    "name" : "b",
+    "value" : "9.8"
+  }, {
+    "name" : "range_left",
+    "value" : "5"
+  }, {
+    "name" : "range_right",
+    "value" : "10"
+  } ],
+  "links" : [ {
+    "name" : "https://www.baidu.com/",
+    "url" : "https://www.baidu.com/",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=1)", "@pytest.mark.usefixtures('setup_teardown')" ]
+  },
+  "source" : "103cc64af59e68c9.json",
+  "parameterValues" : [ "'0.3'", "9.8", "5", "10" ]
+}

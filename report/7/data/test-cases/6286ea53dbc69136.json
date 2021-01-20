@@ -1,0 +1,142 @@
+{
+  "uid" : "6286ea53dbc69136",
+  "name" : "test_add[range_left_error]",
+  "fullName" : "test_pytest.test_pytest_task_two.test_task_two.TestTaskTwo#test_add",
+  "historyId" : "f564272d359d55f14304f340ac152d90",
+  "time" : {
+    "start" : 1611106711180,
+    "stop" : 1611106711180,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 计算结果小于区间\nassert (4.9 >= 5)",
+  "statusTrace" : "self = <test_task_two.TestTaskTwo object at 0x00000267B5382E08>, a = 0.3, b = 4.6, range_left = 5, range_right = 10\n\n    @allure.link(\"https://www.baidu.com/\")\n    @allure.story(\"加法运算用例\")#子级标注\n    @pytest.mark.run(order=1)#执行顺序\n    @pytest.mark.usefixtures(\"setup_teardown\")#调用fixtures方法\n    @pytest.mark.parametrize(\"a,b,range_left,range_right\",get_yaml_data(key=\"add\"),ids=get_yaml_data(key=\"ids\"))#参数\n    def test_add(self,a,b,range_left,range_right):\n        r=Calculator.add(a,b)\n        if isinstance(r,float):\n            r=round(r,2)\n        with allure.step(\"加法断言\"):#allure步骤说明\n>           assert (r>= range_left and  r<= range_right), \"计算结果小于区间\" if r < range_left else \"计算结果大于区间\" if r > range_left else r\nE           AssertionError: 计算结果小于区间\nE           assert (4.9 >= 5)\n\ntest_pytest\\test_pytest_task_two\\test_task_two.py:24: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup_teardown",
+    "time" : {
+      "start" : 1611106711163,
+      "stop" : 1611106711163,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 计算结果小于区间\nassert (4.9 >= 5)",
+    "statusTrace" : "self = <test_task_two.TestTaskTwo object at 0x00000267B5382E08>, a = 0.3, b = 4.6, range_left = 5, range_right = 10\n\n    @allure.link(\"https://www.baidu.com/\")\n    @allure.story(\"加法运算用例\")#子级标注\n    @pytest.mark.run(order=1)#执行顺序\n    @pytest.mark.usefixtures(\"setup_teardown\")#调用fixtures方法\n    @pytest.mark.parametrize(\"a,b,range_left,range_right\",get_yaml_data(key=\"add\"),ids=get_yaml_data(key=\"ids\"))#参数\n    def test_add(self,a,b,range_left,range_right):\n        r=Calculator.add(a,b)\n        if isinstance(r,float):\n            r=round(r,2)\n        with allure.step(\"加法断言\"):#allure步骤说明\n>           assert (r>= range_left and  r<= range_right), \"计算结果小于区间\" if r < range_left else \"计算结果大于区间\" if r > range_left else r\nE           AssertionError: 计算结果小于区间\nE           assert (4.9 >= 5)\n\ntest_pytest\\test_pytest_task_two\\test_task_two.py:24: AssertionError",
+    "steps" : [ {
+      "name" : "加法断言",
+      "time" : {
+        "start" : 1611106711180,
+        "stop" : 1611106711180,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: 计算结果小于区间\nassert (4.9 >= 5)\n",
+      "statusTrace" : "  File \"C:\\Users\\余伟豪\\Desktop\\PythonDemo\\test_pytest\\test_pytest_task_two\\test_task_two.py\", line 24, in test_add\n    assert (r>= range_left and  r<= range_right), \"计算结果小于区间\" if r < range_left else \"计算结果大于区间\" if r > range_left else r\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "setup_teardown::0",
+    "time" : {
+      "start" : 1611106741575,
+      "stop" : 1611106741575,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业二"
+  }, {
+    "name" : "story",
+    "value" : "加法运算用例"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_teardown')"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_pytest.test_pytest_task_two"
+  }, {
+    "name" : "suite",
+    "value" : "test_task_two"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTaskTwo"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-939OH2V"
+  }, {
+    "name" : "thread",
+    "value" : "5412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.test_pytest_task_two.test_task_two"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "0.3"
+  }, {
+    "name" : "b",
+    "value" : "4.6"
+  }, {
+    "name" : "range_left",
+    "value" : "5"
+  }, {
+    "name" : "range_right",
+    "value" : "10"
+  } ],
+  "links" : [ {
+    "name" : "https://www.baidu.com/",
+    "url" : "https://www.baidu.com/",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=1)", "@pytest.mark.usefixtures('setup_teardown')" ]
+  },
+  "source" : "6286ea53dbc69136.json",
+  "parameterValues" : [ "0.3", "4.6", "5", "10" ]
+}

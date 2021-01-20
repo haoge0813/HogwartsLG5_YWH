@@ -1,0 +1,177 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 计算结果小于区间\nassert (4.9 >= 5)",
+      "children" : [ {
+        "name" : "test_add[range_left_error]",
+        "uid" : "d80c5f92596a8981",
+        "parentUid" : "5b3c62e3dfb5937ffb415dffc9216ba0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106789542,
+          "stop" : 1611106789543,
+          "duration" : 1
+        },
+        "flaky" : true,
+        "parameters" : [ "0.3", "4.6", "5", "10" ]
+      }, {
+        "name" : "test_multiplication[range_left_error]",
+        "uid" : "e56195f7e371daeb",
+        "parentUid" : "5b3c62e3dfb5937ffb415dffc9216ba0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106819931,
+          "stop" : 1611106819931,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "1", "4.9", "5", "10" ]
+      } ],
+      "uid" : "5b3c62e3dfb5937ffb415dffc9216ba0"
+    }, {
+      "name" : "AssertionError: 计算结果大于区间\nassert (10.1 >= 5 and 10.1 <= 10)",
+      "children" : [ {
+        "name" : "test_add[range_right_error]",
+        "uid" : "504c4d3efed3a334",
+        "parentUid" : "5e4d95cb098fe0c73c69cff23714beb5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106789573,
+          "stop" : 1611106789573,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "0.3", "9.8", "5", "10" ]
+      }, {
+        "name" : "test_multiplication[range_right_error]",
+        "uid" : "61b7204f3bc2c4b5",
+        "parentUid" : "5e4d95cb098fe0c73c69cff23714beb5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106819940,
+          "stop" : 1611106819941,
+          "duration" : 1
+        },
+        "flaky" : true,
+        "parameters" : [ "1", "10.1", "5", "10" ]
+      } ],
+      "uid" : "5e4d95cb098fe0c73c69cff23714beb5"
+    }, {
+      "name" : "AssertionError: 参数类型不是数值类型",
+      "children" : [ {
+        "name" : "test_add[equivalence_class_error1]",
+        "uid" : "b36805b93221c1f4",
+        "parentUid" : "c88159e36f3ea4a8924a68a8a6dfbd4b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106789582,
+          "stop" : 1611106789582,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "'0.3'", "9.8", "5", "10" ]
+      }, {
+        "name" : "test_division[equivalence_class_error1]",
+        "uid" : "f0af3cf4f4f8659b",
+        "parentUid" : "c88159e36f3ea4a8924a68a8a6dfbd4b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106819866,
+          "stop" : 1611106819866,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "'0.3'", "'0.4'", "5", "10" ]
+      }, {
+        "name" : "test_sub[equivalence_class_error1]",
+        "uid" : "373c1aa426fe79fa",
+        "parentUid" : "c88159e36f3ea4a8924a68a8a6dfbd4b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106819906,
+          "stop" : 1611106819906,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "'0.3'", "'0.99'", "5", "10" ]
+      }, {
+        "name" : "test_multiplication[equivalence_class_error1]",
+        "uid" : "d01078b6eeffd891",
+        "parentUid" : "c88159e36f3ea4a8924a68a8a6dfbd4b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106819949,
+          "stop" : 1611106819949,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "'0.3'", "9.8", "5", "10" ]
+      } ],
+      "uid" : "c88159e36f3ea4a8924a68a8a6dfbd4b"
+    }, {
+      "name" : "AssertionError: 计算结果小于区间\nassert (4.99 >= 5)",
+      "children" : [ {
+        "name" : "test_division[range_left_error]",
+        "uid" : "a92be22869ada425",
+        "parentUid" : "dee7e935bc5ae6a064d213f28b2dd490",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106799690,
+          "stop" : 1611106799691,
+          "duration" : 1
+        },
+        "flaky" : true,
+        "parameters" : [ "4.99", "1", "5", "10" ]
+      }, {
+        "name" : "test_sub[range_left_error]",
+        "uid" : "8b3a339264bf4e53",
+        "parentUid" : "dee7e935bc5ae6a064d213f28b2dd490",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106819890,
+          "stop" : 1611106819890,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "5.0", "0.01", "5", "10" ]
+      } ],
+      "uid" : "dee7e935bc5ae6a064d213f28b2dd490"
+    }, {
+      "name" : "AssertionError: 计算结果大于区间\nassert (10.01 >= 5 and 10.01 <= 10)",
+      "children" : [ {
+        "name" : "test_division[range_right_error]",
+        "uid" : "8aa09b6717e9dc7e",
+        "parentUid" : "25bea643151131b49b07af4ca52b302c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106809773,
+          "stop" : 1611106809774,
+          "duration" : 1
+        },
+        "flaky" : true,
+        "parameters" : [ "10.01", "1", "5", "10" ]
+      } ],
+      "uid" : "25bea643151131b49b07af4ca52b302c"
+    }, {
+      "name" : "AssertionError: 计算结果大于区间\nassert (10.09 >= 5 and 10.09 <= 10)",
+      "children" : [ {
+        "name" : "test_sub[range_right_error]",
+        "uid" : "16acd0505d921a41",
+        "parentUid" : "03af557d5079c572d0b6479f448e4421",
+        "status" : "failed",
+        "time" : {
+          "start" : 1611106819899,
+          "stop" : 1611106819899,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ "10.1", "0.01", "5", "10" ]
+      } ],
+      "uid" : "03af557d5079c572d0b6479f448e4421"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -1,0 +1,138 @@
+{
+  "uid" : "95a5ac24c3b5b951",
+  "name" : "test_sub[range_right_error]",
+  "fullName" : "test_pytest.test_pytest_task_two.test_task_two.TestTaskTwo#test_sub",
+  "historyId" : "9d65a2da10c73e9a31e6198431368476",
+  "time" : {
+    "start" : 1611106741515,
+    "stop" : 1611106741515,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 计算结果大于区间\nassert (10.09 >= 5 and 10.09 <= 10)",
+  "statusTrace" : "self = <test_task_two.TestTaskTwo object at 0x00000267B50A5148>, a = 10.1, b = 0.01, range_left = 5, range_right = 10\n\n    @allure.story(\"减法运算用例\")\n    @pytest.mark.run(order=3)\n    @pytest.mark.usefixtures(\"setup_teardown\")\n    @pytest.mark.parametrize(\"a,b,range_left,range_right\", get_yaml_data(key=\"sub\"), ids=get_yaml_data(key=\"ids\"))\n    def test_sub(self,a,b,range_left,range_right):\n        r = Calculator.sub(a, b)\n        if isinstance(r, float):\n            r = round(r, 2)\n        with allure.step(\"断言\"):\n>           assert (r >= range_left and r <= range_right), \"计算结果小于区间\" if r < range_left else \"计算结果大于区间\" if r > range_left else r\nE           AssertionError: 计算结果大于区间\nE           assert (10.09 >= 5 and 10.09 <= 10)\n\ntest_pytest\\test_pytest_task_two\\test_task_two.py:35: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup_teardown",
+    "time" : {
+      "start" : 1611106711163,
+      "stop" : 1611106711163,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 计算结果大于区间\nassert (10.09 >= 5 and 10.09 <= 10)",
+    "statusTrace" : "self = <test_task_two.TestTaskTwo object at 0x00000267B50A5148>, a = 10.1, b = 0.01, range_left = 5, range_right = 10\n\n    @allure.story(\"减法运算用例\")\n    @pytest.mark.run(order=3)\n    @pytest.mark.usefixtures(\"setup_teardown\")\n    @pytest.mark.parametrize(\"a,b,range_left,range_right\", get_yaml_data(key=\"sub\"), ids=get_yaml_data(key=\"ids\"))\n    def test_sub(self,a,b,range_left,range_right):\n        r = Calculator.sub(a, b)\n        if isinstance(r, float):\n            r = round(r, 2)\n        with allure.step(\"断言\"):\n>           assert (r >= range_left and r <= range_right), \"计算结果小于区间\" if r < range_left else \"计算结果大于区间\" if r > range_left else r\nE           AssertionError: 计算结果大于区间\nE           assert (10.09 >= 5 and 10.09 <= 10)\n\ntest_pytest\\test_pytest_task_two\\test_task_two.py:35: AssertionError",
+    "steps" : [ {
+      "name" : "断言",
+      "time" : {
+        "start" : 1611106741515,
+        "stop" : 1611106741515,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: 计算结果大于区间\nassert (10.09 >= 5 and 10.09 <= 10)\n",
+      "statusTrace" : "  File \"C:\\Users\\余伟豪\\Desktop\\PythonDemo\\test_pytest\\test_pytest_task_two\\test_task_two.py\", line 35, in test_sub\n    assert (r >= range_left and r <= range_right), \"计算结果小于区间\" if r < range_left else \"计算结果大于区间\" if r > range_left else r\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "setup_teardown::0",
+    "time" : {
+      "start" : 1611106741575,
+      "stop" : 1611106741575,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业二"
+  }, {
+    "name" : "story",
+    "value" : "减法运算用例"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_teardown')"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_pytest.test_pytest_task_two"
+  }, {
+    "name" : "suite",
+    "value" : "test_task_two"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTaskTwo"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-939OH2V"
+  }, {
+    "name" : "thread",
+    "value" : "5412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.test_pytest_task_two.test_task_two"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "10.1"
+  }, {
+    "name" : "b",
+    "value" : "0.01"
+  }, {
+    "name" : "range_left",
+    "value" : "5"
+  }, {
+    "name" : "range_right",
+    "value" : "10"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=3)", "@pytest.mark.usefixtures('setup_teardown')" ]
+  },
+  "source" : "95a5ac24c3b5b951.json",
+  "parameterValues" : [ "10.1", "0.01", "5", "10" ]
+}

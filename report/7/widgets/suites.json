@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "7e2de6e23a0838f853cc0e64014f7965",
+    "name" : "test_pytest.test_pytest_task_two",
+    "statistic" : {
+      "failed" : 12,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 24
+    }
+  } ]
+}

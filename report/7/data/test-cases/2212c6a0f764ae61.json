@@ -1,0 +1,146 @@
+{
+  "uid" : "2212c6a0f764ae61",
+  "name" : "test_add[range_in_normal]",
+  "fullName" : "test_pytest.test_pytest_task_two.test_task_two.TestTaskTwo#test_add",
+  "historyId" : "19e615bc0cace231d3eddf31063c7dcb",
+  "time" : {
+    "start" : 1611106789532,
+    "stop" : 1611106789532,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup_teardown",
+    "time" : {
+      "start" : 1611106789520,
+      "stop" : 1611106789520,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "加法断言",
+      "time" : {
+        "start" : 1611106789532,
+        "stop" : 1611106789532,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "setup_teardown::0",
+    "time" : {
+      "start" : 1611106819957,
+      "stop" : 1611106819957,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业二"
+  }, {
+    "name" : "story",
+    "value" : "加法运算用例"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_teardown')"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_pytest.test_pytest_task_two"
+  }, {
+    "name" : "suite",
+    "value" : "test_task_two"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTaskTwo"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-939OH2V"
+  }, {
+    "name" : "thread",
+    "value" : "6820-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.test_pytest_task_two.test_task_two"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "1"
+  }, {
+    "name" : "b",
+    "value" : "9"
+  }, {
+    "name" : "range_left",
+    "value" : "3"
+  }, {
+    "name" : "range_right",
+    "value" : "10"
+  } ],
+  "links" : [ {
+    "name" : "https://www.baidu.com/",
+    "url" : "https://www.baidu.com/",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4bcec67b5abd70af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1611106711170,
+        "stop" : 1611106711170,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)", "@pytest.mark.usefixtures('setup_teardown')" ]
+  },
+  "source" : "2212c6a0f764ae61.json",
+  "parameterValues" : [ "1", "9", "3", "10" ]
+}
