@@ -17,7 +17,7 @@ class TestTaskOne():
         caps["appActivity"] = ".launch.WwMainActivity"
         caps["appPackage"] = "com.tencent.wework"
         caps["ensureWebviewsHavePages"] = True
-
+        caps["settings[waitForIdleTimeout]"]=0
         self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", caps)
         self.driver.wait_activity(".launch.WwMainActivity",10)
         self.wait=WebDriverWait(self.driver,10,1)
