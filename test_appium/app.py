@@ -2,7 +2,7 @@ from appium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
 from test_appium.page.base_page.base_page import BasePage
-from test_appium.page.main_page import MainPage
+from test_appium.page.main_page.main_page import MainPage
 
 
 class App(BasePage):

@@ -16,6 +16,7 @@ class TestTaskTwo():
     def test_task(self,name,account,nickname,phone):
 
         add_member=self.main.mail_list_click().add_member_click().input_add_click()
+
         add_member.name_send_keys(name)
         add_member.account_send_keys(account)
         add_member.nickname_send_keys(nickname)
@@ -23,7 +24,7 @@ class TestTaskTwo():
         add_member.phone_send_keys(phone)
         element=add_member.save().get_tost()
         assert element.text=="添加成功"
-        pass
+
 
 
     def teardown(self):

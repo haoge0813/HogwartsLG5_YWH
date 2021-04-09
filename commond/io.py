@@ -1,7 +1,8 @@
 import yaml
 import os
 
-def get_yaml_data(path=None, filename=None, key=None):
+
+def get_yaml_data(path=None, filename=None, key=None) -> list:
     """
     获取数据
     :param path: 文件夹路径，没有则为当前文件所在的目录
