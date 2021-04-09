@@ -1,0 +1,12 @@
+mail_list_click:
+  -
+    action: find_and_click
+    locator: [xpath,"//*[@resource-id='com.tencent.wework:id/en5' and @text='通讯录']"]
+
+
+
+
+
+
+
+

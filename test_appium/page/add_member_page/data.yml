@@ -1,0 +1,35 @@
+name_send_keys:
+  -
+    action: wait_find_and_send
+    locator: [xpath,"//*[@resource-id='com.tencent.wework:id/et5']/android.widget.RelativeLayout/android.widget.EditText"]
+
+account_send_keys:
+  -
+    action: find_and_send
+    locator: [xpath,"//*[@resource-id='com.tencent.wework:id/err']/android.widget.RelativeLayout/android.widget.EditText"]
+
+nickname_send_keys:
+  -
+    action: find_and_send
+    locator: [xpath,"//*[@resource-id='com.tencent.wework:id/esh']/android.widget.RelativeLayout/android.widget.EditText"]
+
+sex_click:
+  -
+    action: find_and_click
+    locator: [xpath,"//*[@resource-id='com.tencent.wework:id/d_d']/android.widget.RelativeLayout"]
+  -
+    action: wait_find_and_click
+    locator: [xpath,"//*[@resource-id='android:id/content']//*[@text='女']"]
+
+phone_send_keys:
+  -
+    action: wait_find_and_send
+    locator: [id,"com.tencent.wework:id/fwi"]
+
+save:
+  -
+    action: find_and_click
+    locator: ["-android uiautomator",'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("保存").instance(0));']
+
+
+

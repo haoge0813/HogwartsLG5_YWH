@@ -1,0 +1,12 @@
+add_member_click:
+  -
+    action: wait_find_and_click
+    locator: [xpath,"//*[@text='添加成员']"]
+
+
+
+
+
+
+
+

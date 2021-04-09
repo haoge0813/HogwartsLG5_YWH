@@ -1,0 +1,12 @@
+input_add_click:
+  -
+    action: wait_find_and_click
+    locator: [xpath,"//*[@text='手动输入添加']"]
+
+
+
+
+
+
+
+
